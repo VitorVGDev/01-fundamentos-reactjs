@@ -11,7 +11,15 @@
 
     --green-300: #00B37E;
     --green-500: #00875f;
+
+    --red-500: #F75A68;
 }
+
+:focus { /*Propiedade que estiliza a borda ao redor do componente que estamos usando*/
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--green-500);
+}
+
 
 * {
     margin: 0;

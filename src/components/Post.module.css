@@ -90,6 +90,17 @@
     margin-top: 1rem;
 }
 
+.commentForm footer {
+    visibility: hidden; /*Setando para que o botão não aparece antes de digitarmos*/
+    max-height: 0;
+}
+
+.commentForm:focus-within /*Foco em qualquer elemento que esteja dentro do .commentForm*/ footer {
+    visibility: visible; 
+    max-height: none;
+}
+
+
 .commentForm button[type=submit]{
     padding: 1rem 1.5rem;
     margin-top: 1rem;
@@ -99,4 +110,13 @@
     color: var(--white);
     font-weight: bold;
     cursor: pointer;
+
+}
+
+.commentForm button[type=submit]:hover {
+    background: var(--green-300);
+}
+
+.commentList {
+    margin-top: 2rem;
 }
